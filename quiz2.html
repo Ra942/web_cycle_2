@@ -1,0 +1,80 @@
+<html>
+
+        <body >
+            <div style="background-image: url(light.jpg)">
+
+<h1 align="center">QUIZ MASTER</h1>
+<div>
+<b>1. national animal</b>
+<br>
+<input type="radio" name="q1" value="1">elephant<br>
+<input type="radio" name="q1" value="2">tiger<br>
+<input type="radio" name="q1" value="3">giraffe<br>
+<input type="radio" name="q1" value="4">monkey<br><br>
+<b>2. who invented Apple</b>
+<br>
+<input type="radio" name="q2" value="1">Steve Jobs<br>
+<input type="radio" name="q2" value="2">Bill Gates<br>
+<input type="radio" name="q2" value="3">James Gosling<br>
+<input type="radio" name="q2" value="4">Dennis Ritchie<br>
+<br>
+<b>3. google is a </b>
+<br>
+<input type="radio" name="q3" value="1">Gaming site<br>
+<input type="radio" name="q3" value="2">Accounting software<br>
+<input type="radio" name="q3" value="3">Search engine<br>
+<input type="radio" name="q3" value="4">Smart watch<br>
+<br>
+<b>4. Who is owns Facebook</b>
+<br>
+<input type="radio" name="q4" value="1">Mark Zuckerburg<br>
+<input type="radio" name="q4" value="2">Bill Gates<br>
+<input type="radio" name="q4" value="3">Alan Turing<br>
+<input type="radio" name="q4" value="4">Charles Babbage<br>
+
+<br>
+<b>5. who owns alibaba corp</b>
+<br>
+<input type="radio" name="q5" value="1">bill gates<br>
+<input type="radio" name="q5" value="2">steve jobs<br>
+<input type="radio" name="q5" value="3">jack ma<br>
+<input type="radio" name="q5" value="4">Tim cook<br>
+<input type="submit" onclick="fun()" value="Submit">
+<input type="reset" value="Reset">
+<br>
+<h4>Your score:</h4><p id="dis" style="color:red"></p>
+</div>
+<script type="text/javascript">
+  function fun()
+  {  
+    var a
+    var c=0
+    a=[document.getElementsByName("q1"),document.getElementsByName("q2"),document.getElementsByName("q3"),document.getElementsByName("q4"),document.getElementsByName("q5")]
+    if(a[0][1].checked)
+    {
+        c=c+1
+    }
+    if(a[1][0].checked)
+    {
+        c=c+1
+    }
+    if(a[2][2].checked)
+    {
+        c=c+1
+    }
+    if(a[3][0].checked)
+    {
+        c=c+1
+    }
+    if(a[4][2].checked)
+    {
+        c=c+1
+    }
+    document.getElementById("dis").innerHTML=c
+}
+
+</script>
+</div>
+</div>
+</body>
+</html>

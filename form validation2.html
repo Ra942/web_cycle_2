@@ -1,0 +1,42 @@
+<html>
+  <script>  
+    function validateform(){  
+    var name=document.myform.name.value;  
+    var password=document.myform.password.value;  
+    var phone=document.myform.phone.value;
+      
+    if (name==null || name==""){  
+      alert("Name can't be blank");  
+      return false;  
+    }
+    else if(password.length<6){  
+      alert("Password must be at least 6 characters long.");  
+      return false;  
+      }  
+      if(phone==null||phone.length!=10)
+      {
+        alert("invalid phone number");
+        return false;
+      }
+    
+        alert("details entered");
+    }
+    
+    </script> 
+
+    <body> 
+      
+        <body style="background-color:rgb(100, 108, 163);"></body>
+    <form name="myform" method="post" action="details.jsp" onsubmit="return validateform()" > 
+      Name:     <input type="text" name="name"required><br/>
+    <br></br>  
+    Password:  <input type="password" name="password" required><br/>
+    <br></br>    
+    phone: <input type="phone" name="phone"required><br/>
+    <br></br>
+    <input type="submit" value="submit">  
+    <br></br>  
+    
+  
+    </form>  
+</html>
